@@ -11,8 +11,13 @@
         var b = prompt(" enter the second side ");
         var c = prompt(" enter the third side ");
 
+        var ok = isNaN(a, b, c);
 
-        determine(a, b, c);
+        if(ok == false)
+        {
+            determine(a, b, c);
+        }
+    
 
         function determine(a, b, c)
         {
